@@ -4,7 +4,7 @@ import React, {useState, useEffect} from 'react'
 
 
 	
-function PersonDisplay(props) {
+function Edit(props) {
   
 
   useEffect(()=>{
@@ -13,11 +13,12 @@ function PersonDisplay(props) {
 
   return(
     
-    <div className='person-display'>
+    <div className='edit-page'>
         <div className='name-id-top'>
-        <h1 id='name'>{props.data[props.indexNum].name.first} {props.data[props.indexNum].name.last}</h1>
-            <h5 id='index25'>{props.data[props.indexNum].id}/25</h5>
-            </div>
+        <input placeholder={props.data[props.indexNum].name.first + ' ' + props.data[props.indexNum].name.last}></input>
+
+            <h5>{props.data[props.indexNum].id}/25</h5>
+          </div>
         
             <h3 id='from'><b>From: </b> {props.data[props.indexNum].city}</h3>
             <h3 id='job_title'><b>Job Title: </b>{props.data[props.indexNum].title}</h3>
@@ -37,4 +38,4 @@ function PersonDisplay(props) {
 
 
 
-export default PersonDisplay
+export default Edit
