@@ -6,10 +6,10 @@ import MainDisplay from './Components/MainDisplay';
 function App() {
   return (
     <div className="App">
+
       <Header/>
-      <div className='display'>
       <MainDisplay/>
-      </div>
+      
 
     </div>
   );
